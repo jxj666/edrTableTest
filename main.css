@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  background: #fff;
+}
+#main{
+  padding: 10px;
+}
+
+.edr-table {
+  color: #1b1b1b;
+  border: 1px solid #1b1b1b;
+  overflow: auto;
+  height: 600px;
+}
+.edr-table .edr-thead .edr-tr, .edr-table .edr-tbody .edr-tr {
+  display: grid;
+  grid-template-columns: minmax(100px, 1fr)  minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);
+}
+.edr-table .edr-thead {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: #eee;
+}
+
+.edr-table .edr-td {
+  position: relative;
+  border: 1px solid #1b1b1b;
+  padding: 20px;
+}
